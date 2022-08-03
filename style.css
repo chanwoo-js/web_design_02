@@ -1,27 +1,36 @@
-*{margin: 0; padding: 0; box-sizing: border-box; color: #333333; font-family: "맑은 고딕";list-style: none; text-decoration: none;}
+*{margin: 0; padding: 0; box-sizing: border-box; color: #333333; font-family: "맑은 고딕";list-style: none; text-decoration: none; background-clip: content-box;}
 body {width: 100%;}
-.wrap {width: 1200px; margin: 0 auto; background-color: aliceblue; height: 700px;}
+.wrap {width: 1200px; margin: 0 auto; background-color: aliceblue; height: 700px; }
 
 
 /* 헤더 */
 h1,nav {float: left;}
 h1 { height: 100px;}
 h1 > a {display: block; height: 100px;}
-nav {background-color: aqua;width: 950px; height: 100px;}
-nav > ul {background-color: antiquewhite; float: right; margin-right: 50px; font-size: 0; height: 100px;}
+nav {width: 950px; height: 100px;}
+nav > ul {float: right; margin-right: 50px; font-size: 0; height: 100px;}
 nav > ul > li {display: inline-block; font-size: 16px; line-height: 100px;}
 nav a {display: inline-block; width: 160px; line-height: 40px; text-align: center; background-color: black; color: white;}
-
-/* 서브메뉴 */
-.sub_menu {display: none;}
-
 /* float 해제 */
-header::after{content: ""; display: block; clear: both;}
-
+header::after{content: ""; display: block; clear: both; }
 /* 서브메뉴 */
 .sub_menu {display: none;}
+
 
 /* 메인 */
-.img_slide {background-color: blue; width: 3600px; height: 300px; position: relative; font-size: 0; }
-.img_slide span {position: absolute; width: 500px; height: 50px; background-color: rgba(0, 0, 0, 0.4); font-size: 30px; text-align: center; line-height: 50px; margin-top: 150px; margin-left: 350px;}
 
+/* 이미지 슬라이드 */
+.img_slide_view {width: 1200px; height: 300px; overflow: hidden;}
+.img_slide { width: 3600px; height: 300px; position: relative; font-size: 0;}
+.img_slide span {position: absolute; width: 500px; height: 50px; background-color: rgba(0, 0, 0, 0.7); font-size: 30px; text-align: center; line-height: 50px; margin-top: 150px; margin-left: 350px;color: white;}
+
+/* 컨텐츠 */
+.contents > div{float: left; width: calc(100%/3); height: 200px; padding: 10px;background-color: antiquewhite;}
+
+/* 탭메뉴 */
+.tab_menu > ul {width: 100%; height: 100%; font-size: 0;}
+.tab_menu > ul > li {display: inline-block; font-size: 16px; width: 100px; height: 25px;line-height: 25px; text-align: center; border: 1px solid black; background-color: grey; border-bottom: none;}
+.tab_menu > ul > li:hover {background-color: #eeeeee;}
+.tab_menu > ul > li:hover > div{display: block;}
+/* 공지사항 */
+.notice {}
