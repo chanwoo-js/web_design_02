@@ -8,3 +8,11 @@ jQuery(document).ready(function (){
         $(".img_slide").animate({marginLeft : +0});
     });
 });
+jQuery(document).ready(function() {
+    $('.tab_menu > ul > li > a').click(function () {
+        $(this).parent().addClass('active')
+        .siblings()
+        .removeClass('active');
+        return false;
+    })
+})
