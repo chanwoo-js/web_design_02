@@ -23,7 +23,7 @@ header::after{content: ""; display: block; clear: both; }
 .img_slide {width: 3600px; height: 300px; font-size: 0;}
 .slide_list {display: inline-block; width: 1200px; height: 300px; position: relative;}
 .img_slide img {width: 1200px; height: 300px;}
-.img_slide span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 50px; z-index: 5; background-color: rgba(0, 0, 0, 0.7); font-size: 30px; line-height: 50px; text-align: center; color: white;}
+.img_slide span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 50px; z-index: 1; background-color: rgba(0, 0, 0, 0.7); font-size: 30px; line-height: 50px; text-align: center; color: white;}
 
 /* 컨텐츠 */
 .contents > div{float: left; width: calc(100%/3); height: 200px; padding: 10px }
@@ -54,13 +54,17 @@ header::after{content: ""; display: block; clear: both; }
 .banner span,.qick span {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: inline-block; text-align: center; width: 200px; height: 30px; background-color: rgba(0, 0, 0, 0.5); color: white; line-height: 30px; }
 .banner img,.qick img{display: block; width: 380px; height: 180px; }
 
+
 /* 푸터 */
 footer {background-color: rgba(0, 0, 0, 0.5); height: 100px;}
 footer > div {float: left;}
+/* 푸터 로고 */
 .footer_logo{ height: 100px;}
 .footer_logo >h2 {height: 100px;}
 .footer_logo > h2 > a {display: inline-block; height: 100px;}
 .footer_logo > h2 > a > img {height: 100px; }
+
+/* 푸터 오른쪽 */
 .footer_right {width: 950px; height: 100px;}
 
 /* 푸터 메뉴 */
@@ -72,4 +76,13 @@ footer > div {float: left;}
 /* 퓨터 저작권 */
 .copyright {height: 50px;}
 .copyright > span {width: 400px; float: right; margin-right: 100px; height: 50px; line-height: 50px; font-size: 16px; text-align: center;}
+
+/* 팝업창 */
+.layer {position: absolute; top: 0; left: 0; z-index: 5;}
+.layer {display: none;}
+.layer.active {display: block;}
+.layer_box {position: relative; width: 500px; height: 400px; position: fixed; left: 30%; top: 20%; background-color: #ffffff;}
+.layer_box button{width: 60px; height: 30px; border: none; background-color: #cccccc; float: right; margin-right: 30px; }
+.layer_title {padding: 20px; line-height: 50px; text-align: center;}
+.layer_body { padding: 0 30px 30px 30px; text-align: center; font-size: 16px; line-height: 25px;}
 

@@ -16,3 +16,13 @@ jQuery(document).ready(function() {
         return false;
     })
 })
+jQuery(document).ready(function() {
+    $('.notice a').click(function () {
+        $(".layer").addClass('active')
+    })
+})
+jQuery(document).ready(function() {
+    $('.layer button').click(function () {
+        $(".layer").removeClass('active')
+    })
+})
