@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
     })
 })
 jQuery(document).ready(function() {
-    $('.notice a').click(function () {
+    $('.notice > div > ul > li > a').click(function () {
         $(".layer").addClass('active')
     })
 })
